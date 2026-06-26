@@ -43,13 +43,16 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 14px rgba(11,110,79,0.35);
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
-.logo-icon span {
-  color: white;
-  font-family: var(--font-montserrat);
-  font-weight: 800;
-  font-size: 1.3rem;
+.logo-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .logo-text {
@@ -214,6 +217,7 @@
 /* X shape when active */
 .hamburger.active span:nth-child(1) {
   transform: translateY(7.5px) rotate(45deg);
+  background: #0B6E4F;
 }
 .hamburger.active span:nth-child(2) {
   opacity: 0;
@@ -221,6 +225,14 @@
 }
 .hamburger.active span:nth-child(3) {
   transform: translateY(-7.5px) rotate(-45deg);
+  background: #0B6E4F;
+}
+
+/* Give active hamburger a white background pill so X is always visible */
+.hamburger.active {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 .mobile-cta { display: none; }

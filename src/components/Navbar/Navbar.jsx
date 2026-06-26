@@ -50,7 +50,9 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo" onClick={(e) => handleNav(e, { href: '#home' })}>
-          <div className="logo-icon"><span>V</span></div>
+          <div className="logo-icon">
+            <img src="/images/guruji.png" alt="Vedamrut Logo" className="logo-icon-img" />
+          </div>
           <div className="logo-text">
             <span className="logo-main">Vedamrut</span>
             <span className="logo-sub">Pain &amp; Neurotherapy</span>

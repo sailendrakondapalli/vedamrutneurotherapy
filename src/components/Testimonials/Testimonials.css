@@ -82,11 +82,7 @@
 }
 
 .testimonial-author img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(110,231,183,0.5);
+  display: none;
 }
 
 .testimonial-author strong {
@@ -150,6 +146,82 @@
   border-radius: 4px;
 }
 
+/* Google rating row */
+.testi-google-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.testi-rating-text {
+  color: rgba(255,255,255,0.80);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Author avatar (initials) */
+.testi-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+  border: 2px solid rgba(110,231,183,0.5);
+}
+
+/* Google icon in author row */
+.testi-google-icon {
+  margin-left: auto;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+/* Give Review CTA */
+.testi-review-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.testi-review-cta p {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.testi-review-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 24px;
+  background: white;
+  color: #1a1a2e;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.testi-review-btn:hover {
+  background: #f0faf5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
 @media (max-width: 900px) {
   .testimonials-track {
     grid-template-columns: 1fr;
@@ -159,4 +231,5 @@
   }
   .testimonial-card.active { transform: none; }
   .testimonial-card:not(:first-child) { display: none; }
+  .testi-review-cta { flex-direction: column; gap: 10px; text-align: center; }
 }

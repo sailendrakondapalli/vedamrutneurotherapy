@@ -26,19 +26,31 @@
   background: linear-gradient(135deg, rgba(10,10,20,0.88) 0%, rgba(15,15,35,0.82) 100%);
 }
 
+/* ── Always single horizontal row, scrollable ── */
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
   margin-top: 50px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(110,231,183,0.4) transparent;
 }
 
+.stats-grid::-webkit-scrollbar { height: 4px; }
+.stats-grid::-webkit-scrollbar-track { background: transparent; }
+.stats-grid::-webkit-scrollbar-thumb { background: rgba(110,231,183,0.4); border-radius: 2px; }
+
 .stats-card {
+  flex: 0 0 auto;
+  min-width: 170px;
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(16px);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: var(--radius-lg);
-  padding: 36px 20px;
+  padding: 30px 16px;
   text-align: center;
   transition: var(--transition);
   position: relative;
@@ -48,9 +60,7 @@
 .stats-card::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 0; left: 0; right: 0;
   height: 3px;
   background: var(--gradient-primary);
 }
@@ -62,34 +72,27 @@
 }
 
 .stats-icon {
-  font-size: 2.4rem;
-  margin-bottom: 16px;
+  font-size: 2.2rem;
+  margin-bottom: 14px;
   display: block;
 }
 
 .stats-value {
   font-family: var(--font-montserrat);
-  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
   font-weight: 900;
   line-height: 1;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .stats-label {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: rgba(255,255,255,0.78);
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 
-@media (max-width: 1024px) {
-  .stats-grid { grid-template-columns: repeat(3, 1fr); }
-}
-
 @media (max-width: 600px) {
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 380px) {
-  .stats-grid { grid-template-columns: 1fr; }
+  .stats-card { min-width: 140px; padding: 22px 12px; }
+  .stats-icon { font-size: 1.8rem; margin-bottom: 10px; }
 }

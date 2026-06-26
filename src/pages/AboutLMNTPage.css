@@ -1,0 +1,130 @@
+.alp-page{font-family:'Poppins',sans-serif;background:#fff}
+.alp-container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+.alp-navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);box-shadow:0 2px 20px rgba(11,110,79,0.10);padding:13px 0}
+.alp-navbar-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.alp-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.alp-logo-icon{width:38px;height:38px;background:linear-gradient(135deg,#0B6E4F,#1D9A6C);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.1rem}
+.alp-logo-name{display:block;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#0B6E4F;line-height:1.2}
+.alp-logo-sub{display:block;font-size:0.60rem;color:#718096}
+.alp-nav-actions{display:flex;gap:10px;align-items:center}
+.alp-call-btn{padding:8px 18px;border:2px solid #0B6E4F;color:#0B6E4F;border-radius:50px;font-weight:600;font-size:0.82rem;text-decoration:none;transition:all 0.3s}
+.alp-call-btn:hover{background:#0B6E4F;color:white}
+.alp-book-btn{padding:9px 20px;background:linear-gradient(135deg,#0B6E4F,#1D9A6C);color:white;border-radius:50px;font-weight:700;font-size:0.82rem;text-decoration:none;transition:all 0.3s;box-shadow:0 4px 14px rgba(11,110,79,0.3)}
+.alp-book-btn:hover{transform:translateY(-2px)}
+
+.alp-hero{position:relative;height:300px;display:flex;align-items:flex-end;overflow:hidden;padding-top:70px;background:linear-gradient(135deg,#062a18 0%,#0B6E4F 55%,#1D9A6C 100%)}
+.alp-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(4,6,12,0.2),rgba(4,6,12,0.55))}
+.alp-hero-content{position:relative;z-index:2;padding:0 40px 44px;max-width:1100px;margin:0 auto;width:100%}
+.alp-breadcrumb{display:inline-block;color:rgba(255,255,255,0.72);font-size:0.82rem;font-weight:500;margin-bottom:12px;text-decoration:none;transition:color 0.2s}
+.alp-breadcrumb:hover{color:#6ee7b7}
+.alp-hero-content h1{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:white;line-height:1.2;margin-bottom:8px}
+.alp-hero-content h1 span{color:#6ee7b7}
+.alp-hero-content p{color:rgba(255,255,255,0.78);font-size:0.88rem}
+
+.alp-body{}
+.alp-section{padding:70px 0}
+
+.alp-tag{display:inline-block;padding:4px 14px;background:rgba(11,110,79,0.08);color:#0B6E4F;border-radius:50px;font-size:0.70rem;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:12px}
+
+/* Intro */
+.alp-intro-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:start;background:white;border-radius:22px;padding:44px;box-shadow:0 8px 28px rgba(0,0,0,0.07)}
+.alp-intro-text h2{font-family:'Montserrat',sans-serif;font-size:1.3rem;font-weight:800;color:#1a1a2e;margin-bottom:14px}
+.alp-intro-text p{font-size:0.92rem;color:#4a5568;line-height:1.85;margin-bottom:14px}
+.alp-summary{display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.alp-sum-item{display:flex;align-items:center;gap:10px;font-size:0.86rem;color:#2d3748;font-weight:500}
+.alp-check{width:20px;height:20px;background:linear-gradient(135deg,#0B6E4F,#1D9A6C);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:800;flex-shrink:0}
+.alp-intro-imgs{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:10px}
+.alp-icard{border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.10)}
+.alp-icard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s}
+.alp-icard:hover img{transform:scale(1.04)}
+.alp-icard-0{grid-column:1/-1;height:180px}
+.alp-icard-1,.alp-icard-2{height:140px}
+
+/* Tabs */
+.alp-tabs-wrap{background:white;border-radius:22px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,0.07)}
+.alp-tabs{display:flex;border-bottom:2px solid rgba(11,110,79,0.10);overflow-x:auto;scrollbar-width:none}
+.alp-tabs::-webkit-scrollbar{display:none}
+.alp-tab{display:flex;align-items:center;gap:7px;padding:15px 26px;background:transparent;border:none;border-bottom:3px solid transparent;font-family:'Poppins',sans-serif;font-size:0.86rem;font-weight:600;color:#718096;cursor:pointer;transition:all 0.25s;white-space:nowrap;margin-bottom:-2px}
+.alp-tab:hover{color:#0B6E4F;background:rgba(11,110,79,0.03)}
+.alp-tab.active{color:#0B6E4F;border-bottom-color:#0B6E4F;background:rgba(11,110,79,0.04)}
+.alp-tab-content{padding:36px 38px}
+.alp-panel{animation:alpFade 0.3s ease}
+@keyframes alpFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.alp-panel-intro{font-size:0.92rem;color:#4a5568;line-height:1.8;margin-bottom:26px;max-width:700px}
+
+.alp-principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.alp-pcard{background:#f4f7f6;border-radius:14px;padding:22px 18px;border-top:3px solid #0B6E4F;transition:all 0.3s}
+.alp-pcard:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(11,110,79,0.11);background:white}
+.alp-picon{font-size:1.9rem;margin-bottom:10px}
+.alp-pcard h4{font-family:'Montserrat',sans-serif;font-size:0.88rem;font-weight:700;color:#1a1a2e;margin-bottom:7px}
+.alp-pcard p{font-size:0.78rem;color:#718096;line-height:1.6}
+
+.alp-core-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:start}
+.alp-core-text h3{font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:800;color:#1a1a2e;margin-bottom:12px}
+.alp-core-text p{font-size:0.88rem;color:#4a5568;line-height:1.85;margin-bottom:14px}
+.alp-heparin-box{background:rgba(11,110,79,0.05);border-left:4px solid #0B6E4F;border-radius:0 12px 12px 0;padding:16px 18px;margin-top:16px}
+.alp-heparin-box h4{font-family:'Montserrat',sans-serif;font-size:0.86rem;font-weight:800;color:#0B6E4F;margin-bottom:8px}
+.alp-heparin-box p{font-size:0.82rem;color:#4a5568;line-height:1.75}
+.alp-core-img img{width:100%;border-radius:16px;height:260px;object-fit:cover;box-shadow:0 10px 28px rgba(0,0,0,0.10);margin-bottom:12px}
+.alp-core-badges{display:flex;flex-wrap:wrap;gap:7px}
+.alp-cbadge{padding:5px 12px;background:rgba(11,110,79,0.08);color:#0B6E4F;border-radius:50px;font-size:0.73rem;font-weight:600;border:1px solid rgba(11,110,79,0.14)}
+
+.alp-cond-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:20px}
+.alp-ccard{display:flex;align-items:flex-start;gap:12px;background:#f4f7f6;border-radius:12px;padding:16px 14px;border-left:3px solid #1D9A6C;transition:all 0.3s}
+.alp-ccard:hover{background:white;box-shadow:0 6px 18px rgba(11,110,79,0.09);transform:translateX(3px)}
+.alp-cicon{font-size:1.7rem;flex-shrink:0}
+.alp-ccard h4{font-family:'Montserrat',sans-serif;font-size:0.84rem;font-weight:700;color:#1a1a2e;margin-bottom:4px}
+.alp-ccard p{font-size:0.77rem;color:#718096;line-height:1.55}
+.alp-adv-box{background:linear-gradient(135deg,#0B6E4F,#1D9A6C);border-radius:14px;padding:22px 24px}
+.alp-adv-box h4{font-family:'Montserrat',sans-serif;font-size:0.92rem;font-weight:800;color:white;margin-bottom:8px}
+.alp-adv-box p{font-size:0.84rem;color:rgba(255,255,255,0.87);line-height:1.72}
+
+.alp-sci-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.alp-scicard{background:#f4f7f6;border-radius:14px;padding:22px 18px;border-top:3px solid #1D9A6C;transition:all 0.3s}
+.alp-scicard:hover{background:white;transform:translateY(-4px);box-shadow:0 10px 24px rgba(11,110,79,0.10)}
+.alp-sci-icon{font-size:1.9rem;margin-bottom:10px}
+.alp-scicard h4{font-family:'Montserrat',sans-serif;font-size:0.86rem;font-weight:700;color:#1a1a2e;margin-bottom:7px}
+.alp-scicard p{font-size:0.77rem;color:#718096;line-height:1.62}
+
+.alp-summary-box{background:linear-gradient(135deg,rgba(11,110,79,0.05),rgba(29,154,108,0.03));border-radius:22px;padding:44px;border:1.5px solid rgba(11,110,79,0.12)}
+.alp-summary-box h3{font-family:'Montserrat',sans-serif;font-size:1.2rem;font-weight:800;color:#1a1a2e;margin-bottom:24px;text-align:center}
+.alp-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.alp-sum-card{background:white;border-radius:12px;padding:16px 14px;text-align:center;border-top:3px solid #0B6E4F;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.alp-sum-card span{display:block;font-size:1.2rem;color:#0B6E4F;font-weight:800;margin-bottom:4px}
+.alp-sum-card strong{font-family:'Montserrat',sans-serif;font-size:0.84rem;font-weight:700;color:#1a1a2e}
+.alp-summary-quote{text-align:center;font-size:0.92rem;font-style:italic;color:#0B6E4F;font-weight:600;padding-top:16px;border-top:1px solid rgba(11,110,79,0.12)}
+
+.alp-cta{background:linear-gradient(135deg,#0B6E4F,#1D9A6C);border-radius:20px;padding:34px 38px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:22px}
+.alp-cta h3{font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:800;color:white;margin-bottom:5px}
+.alp-cta p{font-size:0.82rem;color:rgba(255,255,255,0.80)}
+.alp-cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+.alp-wa-btn{display:inline-flex;align-items:center;gap:6px;padding:11px 22px;background:#25D366;color:white;border-radius:50px;font-family:'Poppins',sans-serif;font-weight:700;font-size:0.86rem;text-decoration:none;transition:all 0.3s;box-shadow:0 4px 14px rgba(37,211,102,0.32)}
+.alp-wa-btn:hover{background:#1db855;transform:translateY(-2px)}
+.alp-guruji-btn{display:inline-flex;align-items:center;gap:6px;padding:11px 22px;background:rgba(255,255,255,0.14);color:white;border:2px solid rgba(255,255,255,0.40);border-radius:50px;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.86rem;text-decoration:none;transition:all 0.3s}
+.alp-guruji-btn:hover{background:rgba(255,255,255,0.24);border-color:white}
+
+.alp-footer-strip{background:#0a1628;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.alp-footer-strip p{font-size:0.76rem;color:rgba(255,255,255,0.35)}
+.alp-footer-strip a{font-size:0.80rem;font-weight:600;color:#6ee7b7;text-decoration:none}
+.alp-footer-strip a:hover{color:white}
+
+.alp-float-wa{position:fixed;bottom:28px;right:24px;width:52px;height:52px;background:#25D366;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,0.45);z-index:900;transition:all 0.3s;animation:alpWa 2.5s ease-in-out infinite}
+.alp-float-wa:hover{transform:scale(1.1);background:#1db855}
+@keyframes alpWa{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.4)}50%{box-shadow:0 6px 32px rgba(37,211,102,0.7),0 0 0 10px rgba(37,211,102,0.1)}}
+
+@media(max-width:900px){
+  .alp-intro-grid{grid-template-columns:1fr;gap:28px;padding:28px 20px}
+  .alp-core-grid{grid-template-columns:1fr}
+  .alp-principles-grid{grid-template-columns:repeat(2,1fr)}
+  .alp-sci-grid{grid-template-columns:repeat(2,1fr)}
+  .alp-tab-content{padding:24px 18px}
+  .alp-cta{flex-direction:column}
+}
+@media(max-width:600px){
+  .alp-principles-grid,.alp-sci-grid,.alp-cond-grid,.alp-summary-grid{grid-template-columns:1fr}
+  .alp-hero-content{padding:0 20px 36px}
+  .alp-footer-strip{flex-direction:column;text-align:center}
+  .alp-nav-actions .alp-call-btn{display:none}
+  .alp-summary-box{padding:28px 18px}
+}

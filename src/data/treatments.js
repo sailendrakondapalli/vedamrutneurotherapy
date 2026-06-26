@@ -2,8 +2,8 @@ export const treatments = [
   {
     slug: 'back-pain',
     title: 'Back Pain',
-    img: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1400&q=80',
+    img: '/images/backpain.png',
+    heroImg: '/images/backpain.png',
     shortDesc: 'Effective neurotherapy for acute and chronic back pain relief.',
     overview: `Back pain is one of the most common conditions affecting millions of people worldwide. At Vedamrut Pain Management & Neurotherapy Treatment Centre, we provide a completely natural, drug-free and surgery-free approach to treating both acute and chronic back pain.
 
@@ -39,8 +39,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'neck-pain',
     title: 'Neck Pain',
-    img: 'https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=1400&q=80',
+    img: '/images/neckpain.png',
+    heroImg: '/images/neckpain.png',
     shortDesc: 'Natural treatment for cervical spondylosis and neck stiffness.',
     overview: `Neck pain and cervical spondylosis are increasingly common in today's digital age. Long hours on computers and smartphones cause severe strain on the cervical spine. At Vedamrut, we treat neck pain through advanced neurotherapy that restores normal cervical alignment and nerve function without any surgery or medicines.`,
     causes: [
@@ -74,8 +74,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'knee-pain',
     title: 'Knee Pain',
-    img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1400&q=80',
+    img: '/images/kneepain.png',
+    heroImg: '/images/kneepain.png',
     shortDesc: 'Non-surgical relief for osteoarthritis and knee joint issues.',
     overview: `Knee pain from osteoarthritis, ligament injuries, or general wear and tear can severely limit daily activities. Many patients come to us after being told they need knee replacement surgery. Through our specialised neurotherapy treatment, we have helped hundreds of patients avoid surgery and regain full mobility naturally.`,
     causes: [
@@ -109,8 +109,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'sciatica',
     title: 'Sciatica',
-    img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1400&q=80',
+    img: '/images/sciatica.png',
+    heroImg: '/images/sciatica.png',
     shortDesc: 'Targeted therapy for sciatic nerve pain and numbness.',
     overview: `Sciatica causes intense pain that radiates from the lower back through the hips, buttocks, and down one or both legs along the sciatic nerve path. At Vedamrut, our neurotherapy directly targets the compressed sciatic nerve to relieve pain, restore sensation, and prevent recurrence — completely without surgery or painkillers.`,
     causes: [
@@ -144,8 +144,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'shoulder-pain',
     title: 'Shoulder Pain',
-    img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1400&q=80',
+    img: '/images/shoulderpain.png',
+    heroImg: '/images/shoulderpain.png',
     shortDesc: 'Relief from rotator cuff injuries and shoulder inflammation.',
     overview: `Shoulder pain can severely restrict your ability to perform everyday tasks. Whether caused by rotator cuff tears, tendinitis, bursitis, or general wear, Vedamrut's neurotherapy approach effectively treats the root cause of shoulder pain and restores full range of motion naturally.`,
     causes: [
@@ -179,8 +179,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'joint-pain',
     title: 'Joint Pain',
-    img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1400&q=80',
+    img: '/images/jointpain.png',
+    heroImg: '/images/jointpain.png',
     shortDesc: 'Comprehensive joint pain management without surgery.',
     overview: `Joint pain affects the hips, ankles, wrists, fingers, and multiple joints simultaneously. Conditions like rheumatoid arthritis, gout, and general joint degeneration cause chronic pain and inflammation. Our neurotherapy treatment addresses joint pain holistically, improving blood circulation, reducing inflammation, and restoring joint function naturally.`,
     causes: [
@@ -214,8 +214,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'paralysis',
     title: 'Paralysis',
-    img: 'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=1400&q=80',
+    img: '/images/paralysis.png',
+    heroImg: '/images/paralysis.png',
     shortDesc: 'Neuro-rehabilitation therapy for paralysis recovery.',
     overview: `Paralysis recovery requires intensive neuro-rehabilitation. At Vedamrut, we specialise in neurotherapy for partial and complete paralysis cases including post-stroke, post-accident, and facial palsy. Our techniques stimulate dormant nerve pathways, improve muscle activation, and help patients regain movement and independence.`,
     causes: [
@@ -249,8 +249,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'migraine',
     title: 'Migraine',
-    img: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=1400&q=80',
+    img: '/images/migraine.png',
+    heroImg: '/images/migraine.png',
     shortDesc: 'Drug-free treatment for chronic migraine and headaches.',
     overview: `Migraines are debilitating headaches often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Most migraine sufferers rely on painkillers that only provide temporary relief and cause side effects. Vedamrut's neurotherapy addresses the root triggers of migraines — nerve inflammation, blood vessel irregularities, and muscular tension — providing lasting drug-free relief.`,
     causes: [
@@ -284,8 +284,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'frozen-shoulder',
     title: 'Frozen Shoulder',
-    img: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1400&q=80',
+    img: '/images/frozenshoulder.png',
+    heroImg: '/images/frozenshoulder.png',
     shortDesc: 'Restore full range of motion naturally and safely.',
     overview: `Frozen shoulder (adhesive capsulitis) causes the shoulder joint capsule to thicken and tighten, severely restricting movement. It progresses through freezing, frozen, and thawing stages, typically lasting 1–3 years untreated. At Vedamrut, our neurotherapy dramatically shortens this recovery timeline and restores full shoulder mobility naturally.`,
     causes: [
@@ -319,8 +319,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'slip-disc',
     title: 'Slip Disc',
-    img: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1400&q=80',
+    img: '/images/slipdisc.png',
+    heroImg: '/images/slipdisc.png',
     shortDesc: 'Non-surgical approach for herniated disc treatment.',
     overview: `A slipped or herniated disc occurs when the soft inner gel of a spinal disc pushes through a crack in the outer casing, pressing on nearby nerves. This causes intense pain, numbness, and weakness. Vedamrut's neurotherapy naturally relieves disc pressure, reduces nerve irritation, and promotes healing without surgery.`,
     causes: [
@@ -354,8 +354,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'muscle-pain',
     title: 'Muscle Pain',
-    img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1400&q=80',
+    img: '/images/musclepain.png',
+    heroImg: '/images/musclepain.png',
     shortDesc: 'Relief from muscle spasms, cramps, and chronic myalgia.',
     overview: `Chronic muscle pain (myalgia) and recurrent muscle spasms significantly impact quality of life. Whether from fibromyalgia, overuse, injury, or stress, Vedamrut's neurotherapy effectively treats the neuromuscular imbalances that cause persistent muscle pain — restoring normal muscle function naturally.`,
     causes: [
@@ -389,8 +389,8 @@ Our neurotherapy techniques work directly on the muscles, nerves, and spinal str
   {
     slug: 'nerve-disorders',
     title: 'Nerve Disorders',
-    img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
-    heroImg: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1400&q=80',
+    img: '/images/nervedisorder.png',
+    heroImg: '/images/nervedisorder.png',
     shortDesc: 'Neurotherapy for neuropathy, nerve damage and disorders.',
     overview: `Peripheral neuropathy and nerve disorders cause pain, numbness, tingling, and weakness — often in the hands and feet. Conditions like diabetic neuropathy, carpal tunnel syndrome, and nerve compression respond excellently to neurotherapy. Our treatment directly stimulates damaged nerves, improves nerve conduction, and promotes regeneration naturally.`,
     causes: [

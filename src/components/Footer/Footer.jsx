@@ -34,7 +34,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <div className="footer-logo-icon">V</div>
+              <div className="footer-logo-icon">
+                <img src="/images/guruji.png" alt="Vedamrut Logo" className="footer-logo-img" />
+              </div>
               <div>
                 <span className="footer-logo-name">Vedamrut</span>
                 <span className="footer-logo-sub">Pain &amp; Neurotherapy Centre</span>
@@ -155,7 +157,6 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <p>© {new Date().getFullYear()} Vedamrut Pain Management &amp; Neurotherapy Treatment Centre. All rights reserved.</p>
-          <p className="footer-credit">Developed with ❤️ for better health</p>
         </div>
       </div>
 
