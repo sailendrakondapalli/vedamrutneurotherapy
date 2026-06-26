@@ -16,6 +16,7 @@ import Stats from './components/Stats/Stats';
 import Gallery from './components/Gallery/Gallery';
 import Testimonials from './components/Testimonials/Testimonials';
 import Achievements from './components/Achievements/Achievements';
+import Courses from './components/Courses/Courses';
 import HealthTips from './components/HealthTips/HealthTips';
 import FAQ from './components/FAQ/FAQ';
 import CTA from './components/CTA/CTA';
@@ -28,7 +29,7 @@ import AboutPage from './pages/AboutPage';
 /* ── Home page (all sections) ── */
 const HomePage = () => {
   const sections = [
-    Hero, About, WhyChoose, Treatments, Process,
+    Hero, About, WhyChoose, Treatments, Courses, Process,
     Benefits, Stats, Gallery, Testimonials,
     Achievements, HealthTips, FAQ, CTA, Contact,
   ];

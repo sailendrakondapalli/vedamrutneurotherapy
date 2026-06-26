@@ -26,8 +26,8 @@ const Hero = () => {
     <section id="home" className="hero-section">
       <div className="hero-bg">
         <img
-          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&q=80"
-          alt="Doctor helping patient with pain relief"
+          src="/images/APNQkAHIS4f03_iE6lhOm1aNUYsFUbwkoU3BwdL7VYvj1jqyAGSetog1GLLr64qnCob2XHasxKx_lOA9_iOleru5ytHXo0C8QnyUcqD-w8huuJwczfquf96HtkRU9uJJvIVjN7gqHEkhP42QWs3Pw1200-h1599-k-no.jpg.jpeg"
+          alt="NT. Parmar Ashok Kumar — Vedamrut Neurotherapy"
           className="hero-bg-img"
           loading="eager"
         />
@@ -95,6 +95,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
+          ref={ref}
         >
           <StatCard end={1000} suffix="+" label="Happy Patients" started={inView} />
           <StatCard end={98} suffix="%" label="Success Rate" started={inView} />

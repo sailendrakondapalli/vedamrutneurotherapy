@@ -43,7 +43,7 @@ button {
 
 section {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden removed — hero needs full viewport height */
 }
 
 .container {
@@ -157,6 +157,23 @@ section {
 ::-webkit-scrollbar-thumb {
   background: var(--secondary);
   border-radius: 3px;
+}
+
+/* Each section that needs clipping gets its own overflow:hidden */
+.about-section,
+.why-section,
+.treatments-section,
+.process-section,
+.benefits-section,
+.stats-section,
+.gallery-section,
+.testimonials-section,
+.achievements-section,
+.healthtips-section,
+.faq-section,
+.cta-section,
+.contact-section {
+  overflow: hidden;
 }
 
 /* AOS base override for better performance */
