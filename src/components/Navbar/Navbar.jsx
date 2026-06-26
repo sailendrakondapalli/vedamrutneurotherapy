@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
@@ -15,15 +17,30 @@ const Navbar = () => {
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Treatments', href: '#treatments' },
+    { label: 'Courses', href: '/courses', isPage: true },
     { label: 'Benefits', href: '#benefits' },
     { label: 'Gallery', href: '#gallery' },
     { label: 'Testimonials', href: '#testimonials' },
     { label: 'Contact', href: '#contact' },
   ];
 
-  const handleNav = (href) => {
+  const handleNav = (e, link) => {
+    e.preventDefault();
     setMenuOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    if (link.isPage) {
+      navigate(link.href);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // If not on home page, go home first then scroll
+      if (window.location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+      } else {
+        document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   const waNumber = '918499011209';
@@ -32,20 +49,18 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <div className="navbar-logo" onClick={() => handleNav('#home')}>
-          <div className="logo-icon">
-            <span>V</span>
-          </div>
+        <div className="navbar-logo" onClick={(e) => handleNav(e, { href: '#home' })}>
+          <div className="logo-icon"><span>V</span></div>
           <div className="logo-text">
             <span className="logo-main">Vedamrut</span>
-            <span className="logo-sub">Pain & Neurotherapy</span>
+            <span className="logo-sub">Pain &amp; Neurotherapy</span>
           </div>
         </div>
 
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a href={link.href} onClick={(e) => { e.preventDefault(); handleNav(link.href); }}>
+              <a href={link.href} onClick={(e) => handleNav(e, link)}>
                 {link.label}
               </a>
             </li>
@@ -72,6 +87,15 @@ const Navbar = () => {
         <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
+
+        {/* Backdrop — tap outside to close */}
+        {menuOpen && (
+          <div
+            className="nav-backdrop"
+            onClick={() => setMenuOpen(false)}
+            aria-hidden="true"
+          />
+        )}
       </div>
     </nav>
   );

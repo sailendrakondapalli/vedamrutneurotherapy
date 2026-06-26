@@ -103,5 +103,5 @@
 }
 
 @media (max-width: 480px) {
-  .why-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
 }

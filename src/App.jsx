@@ -10,13 +10,13 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import WhyChoose from './components/WhyChoose/WhyChoose';
 import Treatments from './components/Treatments/Treatments';
+import CoursesPreview from './components/Courses/CoursesPreview';
 import Process from './components/Process/Process';
 import Benefits from './components/Benefits/Benefits';
 import Stats from './components/Stats/Stats';
 import Gallery from './components/Gallery/Gallery';
 import Testimonials from './components/Testimonials/Testimonials';
 import Achievements from './components/Achievements/Achievements';
-import Courses from './components/Courses/Courses';
 import HealthTips from './components/HealthTips/HealthTips';
 import FAQ from './components/FAQ/FAQ';
 import CTA from './components/CTA/CTA';
@@ -25,11 +25,12 @@ import Footer from './components/Footer/Footer';
 import FloatingButtons from './components/FloatingButtons/FloatingButtons';
 import TreatmentDetail from './pages/TreatmentDetail';
 import AboutPage from './pages/AboutPage';
+import CoursesPage from './pages/CoursesPage';
 
-/* ── Home page (all sections) ── */
+/* ── Home page ── */
 const HomePage = () => {
   const sections = [
-    Hero, About, WhyChoose, Treatments, Courses, Process,
+    Hero, About, WhyChoose, Treatments, CoursesPreview, Process,
     Benefits, Stats, Gallery, Testimonials,
     Achievements, HealthTips, FAQ, CTA, Contact,
   ];
@@ -64,16 +65,14 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/treatment/:slug" element={
-        <ErrorBoundary>
-          <TreatmentDetail />
-        </ErrorBoundary>
+        <ErrorBoundary><TreatmentDetail /></ErrorBoundary>
       } />
       <Route path="/about" element={
-        <ErrorBoundary>
-          <AboutPage />
-        </ErrorBoundary>
+        <ErrorBoundary><AboutPage /></ErrorBoundary>
       } />
-      {/* Catch-all → home */}
+      <Route path="/courses" element={
+        <ErrorBoundary><CoursesPage /></ErrorBoundary>
+      } />
       <Route path="*" element={<HomePage />} />
     </Routes>
   );

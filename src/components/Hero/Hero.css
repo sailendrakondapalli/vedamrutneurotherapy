@@ -217,3 +217,102 @@
   .stat-value { font-size: 1.8rem; }
   .btn-hero-primary, .btn-hero-secondary { padding: 12px 22px; font-size: 0.88rem; }
 }
+
+/* ═══════════════════════════════════
+   TABLET  ≤ 1024px
+   ═══════════════════════════════════ */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-text { max-width: 100%; }
+  .hero-buttons { justify-content: center; }
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .stat-card { min-width: 120px; padding: 20px 18px; }
+}
+
+/* ═══════════════════════════════════
+   MOBILE  ≤ 768px
+   Full dark overlay from bottom,
+   text sits bottom-left,
+   buttons stacked full-width
+   ═══════════════════════════════════ */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 100svh;
+    align-items: flex-end;
+  }
+
+  /* Full dark overlay on mobile */
+  .hero-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(4, 6, 12, 0.95) 0%,
+      rgba(4, 6, 12, 0.65) 50%,
+      rgba(4, 6, 12, 0.15) 100%
+    );
+  }
+
+  /* Keep person visible at top */
+  .hero-bg-img {
+    object-position: 65% top;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 80px;
+    gap: 0;
+  }
+
+  .hero-text { max-width: 100%; }
+
+  .hero-badge { margin-bottom: 16px; font-size: 0.75rem; }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 7vw, 2.4rem);
+    margin-bottom: 14px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 24px;
+    letter-spacing: 0;
+  }
+
+  /* Buttons stacked, full width */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 0;
+  }
+
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 0.92rem;
+  }
+
+  /* Hide stats on mobile */
+  .hero-stats { display: none; }
+
+  .hero-wave svg { height: 50px; }
+}
+
+@media (max-width: 400px) {
+  .hero-content { padding-bottom: 70px; }
+  .hero-title { font-size: 1.8rem; }
+}
