@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { treatments } from '../data/treatments';
 import './TreatmentDetail.css';
+import useSEO from '../hooks/useSEO';
 
 const TreatmentDetail = () => {
   const { slug } = useParams();
@@ -9,6 +10,27 @@ const TreatmentDetail = () => {
   const treatment = treatments.find((t) => t.slug === slug);
 
   const waNumber = '918499011209';
+
+  // Dynamic per-treatment SEO
+  useSEO(treatment ? {
+    title: `${treatment.title} Treatment — Natural Neurotherapy, Warangal`,
+    description: `${treatment.shortDesc} Drug-free, surgery-free neurotherapy for ${treatment.title} by NT. Parmar Ashok Kumar at Vedamrut, Warangal, Telangana.`,
+    keywords: `${treatment.title} treatment Warangal, neurotherapy ${treatment.title}, natural ${treatment.title} cure, drug-free ${treatment.title} Telangana`,
+    canonical: `/treatment/${slug}`,
+    ogImage: `https://neurotherapyindia.website${treatment.img}`,
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalCondition",
+      "name": treatment.title,
+      "description": treatment.shortDesc,
+      "url": `https://neurotherapyindia.website/treatment/${slug}`,
+      "possibleTreatment": {
+        "@type": "MedicalTherapy",
+        "name": "Neurotherapy (LMNT)",
+        "description": `Natural, drug-free neurotherapy for ${treatment.title} by NT. Parmar Ashok Kumar at Vedamrut, Warangal.`,
+      },
+    }),
+  } : {});
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

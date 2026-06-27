@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './AboutPage.css';
+import useSEO from '../hooks/useSEO';
 
 const values = [
   { icon: '🌿', title: 'Natural Healing', desc: 'We use only natural methods that work in harmony with the body\'s own healing mechanisms, with zero chemicals or artificial substances.' },
@@ -24,6 +25,20 @@ const waNumber = '918499011209';
 const waMsg = encodeURIComponent('Hello! I would like to know more about Vedamrut Pain Management & Neurotherapy Treatment Centre.');
 
 const AboutPage = () => {
+  useSEO({
+    title: 'About Vedamrut — Natural Neurotherapy Centre, Warangal',
+    description: 'Learn about Vedamrut Pain Management & Neurotherapy Centre, founded by NT. Parmar Ashok Kumar. 10+ years of natural, drug-free pain relief in Warangal, Telangana.',
+    keywords: 'about Vedamrut neurotherapy, NT Parmar Ashok Kumar, natural pain management Warangal, neurotherapy centre Hanamkonda',
+    canonical: '/about',
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Vedamrut Neurotherapy",
+      "url": "https://neurotherapyindia.website/about",
+      "description": "About Vedamrut Pain Management & Neurotherapy Treatment Centre, founded by NT. Parmar Ashok Kumar in Warangal, Telangana.",
+    }),
+  });
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);

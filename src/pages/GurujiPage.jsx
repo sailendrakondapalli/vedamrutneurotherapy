@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './GurujiPage.css';
+import useSEO from '../hooks/useSEO';
 
 const stats = [
   { value: '5M+', label: 'Patients Treated' },
@@ -23,6 +24,24 @@ const timeline = [
 const waNumber = '918499011209';
 
 const GurujiPage = () => {
+  useSEO({
+    title: 'Late Dr. Lajpatrai Mehra — Founder of LMNT Neurotherapy',
+    description: 'Discover the life and legacy of Late Dr. Lajpatrai Mehra, founder of LMNT (Lajpatrai Mehra Neurotherapy). A humanitarian who treated 5 million+ patients naturally.',
+    keywords: 'Dr Lajpatrai Mehra, LMNT founder, Guruji neurotherapy, Lajpatrai Mehra Neurotherapy, drugless healing India',
+    canonical: '/guruji',
+    ogImage: 'https://neurotherapyindia.website/images/guruji.png',
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Late Dr. Lajpatrai Mehra",
+      "description": "Founder of LMNT (Lajpatrai Mehra Neurotherapy). Treated 5 million+ patients. Trained 3000+ neurotherapists across India and abroad.",
+      "birthDate": "1932",
+      "deathDate": "2017",
+      "jobTitle": "Founder of LMNT, Neurotherapist",
+      "url": "https://neurotherapyindia.website/guruji",
+    }),
+  });
+
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, []);
 
   return (

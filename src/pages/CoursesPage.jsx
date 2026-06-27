@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './CoursesPage.css';
+import useSEO from '../hooks/useSEO';
 
 const waNumber = '918499011209';
 
@@ -75,6 +76,20 @@ const programs = [
 ];
 
 const CoursesPage = () => {
+  useSEO({
+    title: 'Neurotherapy Academic Programs — B.Voc, M.Voc, Diploma & Certificate Courses',
+    description: 'Enroll in university-level neurotherapy programs — B.Voc, M.Voc in Yogic Science Neurotherapy, Diploma & Certificate in Neurotherapy. LMNT Academy, Warangal.',
+    keywords: 'neurotherapy course India, LMNT diploma, B.Voc Yogic Science Neurotherapy, neurotherapy certificate course, neurotherapy training Warangal',
+    canonical: '/courses',
+    schema: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "LMNT Neurotherapy Training Programs — Vedamrut",
+      "url": "https://neurotherapyindia.website/courses",
+      "description": "University-level certificate, graduation & master's degree programs in Neurotherapy at Vedamrut, Warangal.",
+    }),
+  });
+
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, []);
 
   const waMsg = (title) =>

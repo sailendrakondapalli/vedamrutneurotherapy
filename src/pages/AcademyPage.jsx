@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './AcademyPage.css';
+import useSEO from '../hooks/useSEO';
 
 const waNumber = '918499011209';
 
@@ -36,6 +37,13 @@ const diseases = ['Allergy','Anal Fistula','Angina Pectoris','Arthritis','Bronch
 const outcomes = ['Self-Reliant','Self-Confident','An Idol for Others','Pride for Family & Nation','Well Groomed','Dedicated & Determined','Visionary Professional','Health Consultant','Social Welfare Promoter','Health Awareness Promoter','Mentor for Students','Provider of Employment'];
 
 const AcademyPage = () => {
+  useSEO({
+    title: 'LMNT Training Academy — Learn Neurotherapy & Build a Career',
+    description: 'Join the Dr. Lajpatrai Mehra Neurotherapy Academy. 6-month certificate & 1.5-year diploma courses. Train under Guruji\'s direct lineage. Earn while you heal — Warangal.',
+    keywords: 'LMNT Academy, neurotherapy training India, learn neurotherapy, neurotherapy career, Dr Lajpatrai Mehra Academy, neurotherapy diploma',
+    canonical: '/academy',
+  });
+
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, []);
   const [activeTab, setActiveTab] = useState(0);
   const tabs = ['About Faculty','Courses Offered','Internship','Diseases Treated','Career Outcomes'];

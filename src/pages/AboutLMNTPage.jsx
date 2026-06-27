@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './AboutLMNTPage.css';
+import useSEO from '../hooks/useSEO';
 
 const waNumber = '918499011209';
 
@@ -39,6 +40,13 @@ const IMAGES = [
 ];
 
 const AboutLMNTPage = () => {
+  useSEO({
+    title: 'What is LMNT? — Lajpatrai Mehra Neurotherapy Explained',
+    description: 'Learn about LMNT (Lajpatrai Mehra Neurotherapy) — a drug-free, surgery-free natural healing system based on modern physiology. Treats thyroid, diabetes, paralysis, joint pain & more.',
+    keywords: 'what is LMNT, Lajpatrai Mehra Neurotherapy, LMNT treatment, drugless therapy India, natural healing system, neurotherapy explained',
+    canonical: '/about-lmnt',
+  });
+
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, []);
   const [activeTab, setActiveTab] = useState(0);
 
