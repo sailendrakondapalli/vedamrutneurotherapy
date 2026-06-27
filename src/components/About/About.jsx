@@ -4,6 +4,8 @@ import './About.css';
 const features = [
   { icon: '🌿', label: 'Natural Healing' },
   { icon: '🏅', label: 'Certified Therapist' },
+  { icon: '🎓', label: '5 Yrs Delhi Faculty' },
+  { icon: '📍', label: 'Telangana State Co-ordinator' },
   { icon: '🎯', label: 'Personalized Treatment' },
   { icon: '💰', label: 'Affordable Care' },
   { icon: '🛡️', label: 'Safe Methods' },
@@ -27,7 +29,7 @@ const About = () => {
               />
             </div>
             <div className="about-badge-card">
-              <span className="badge-num">10+</span>
+              <span className="badge-num">5+</span>
               <span className="badge-txt">Years of Trusted Healing</span>
             </div>
             <div className="about-img-accent"></div>
@@ -39,12 +41,12 @@ const About = () => {
               About <span className="highlight">Vedamrut</span> Treatment Centre
             </h2>
             <p className="about-desc">
-              Vedamrut Pain Management & Neurotherapy Treatment Centre is dedicated to providing natural,
+              Vedamrut Pain Management & Neurotherapy Treatment &amp; Training Centre is dedicated to providing natural,
               non-invasive neurotherapy treatments for various chronic pain conditions. Our mission is to
               improve the quality of life through safe, drug-free and surgery-free therapies.
             </p>
             <p className="about-desc" style={{ marginTop: '16px' }}>
-              Under the expert guidance of <strong>NT. Parmar Ashok Kumar</strong>, we have helped over
+              Under the expert guidance of <strong>NT. Parmar Ashok Kumar</strong> — <strong>Telangana State Neurotherapy Co-ordinator</strong> and a certified neurotherapist who served 5 years as faculty in Delhi — we have helped over
               1500+ patients rediscover a pain-free life through our scientifically proven neurotherapy methods
               that work in harmony with the body's natural healing process.
             </p>

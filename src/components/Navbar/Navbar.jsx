@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
           <div className="logo-text">
             <span className="logo-main">Vedamrut</span>
-            <span className="logo-sub">Pain &amp; Neurotherapy</span>
+            <span className="logo-sub">Pain Management &amp; Neurotherapy Treatment &amp; Training Centre</span>
           </div>
         </div>
 
