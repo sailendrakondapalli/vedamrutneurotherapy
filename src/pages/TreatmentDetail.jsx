@@ -35,7 +35,7 @@ const TreatmentDetail = () => {
       <nav className="td-topbar">
         <div className="td-topbar-inner">
           <button className="td-logo" onClick={() => navigate('/')}>
-            <span className="td-logo-icon">V</span>
+            <span className="td-logo-icon"><img src="/images/guruji.png" alt="Vedamrut" /></span>
             <span className="td-logo-text">Vedamrut</span>
           </button>
           <div className="td-topbar-actions">

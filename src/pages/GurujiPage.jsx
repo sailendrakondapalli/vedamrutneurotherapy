@@ -31,7 +31,7 @@ const GurujiPage = () => {
       <nav className="gjp-navbar">
         <div className="gjp-navbar-inner">
           <Link to="/" className="gjp-logo">
-            <span className="gjp-logo-icon">V</span>
+            <span className="gjp-logo-icon"><img src="/images/guruji.png" alt="Vedamrut" /></span>
             <div>
               <span className="gjp-logo-name">Vedamrut</span>
               <span className="gjp-logo-sub">Pain &amp; Neurotherapy Centre</span>

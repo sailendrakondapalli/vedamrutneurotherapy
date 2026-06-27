@@ -34,7 +34,7 @@ const AboutPage = () => {
       <nav className="ap-navbar">
         <div className="ap-navbar-inner">
           <Link to="/" className="ap-logo">
-            <span className="ap-logo-icon">V</span>
+            <span className="ap-logo-icon"><img src="/images/guruji.png" alt="Vedamrut" /></span>
             <div>
               <span className="ap-logo-name">Vedamrut</span>
               <span className="ap-logo-sub">Pain &amp; Neurotherapy Centre</span>

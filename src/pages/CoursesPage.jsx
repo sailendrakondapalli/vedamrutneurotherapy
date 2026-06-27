@@ -86,7 +86,7 @@ const CoursesPage = () => {
       <nav className="cp-navbar">
         <div className="cp-navbar-inner">
           <Link to="/" className="cp-logo">
-            <span className="cp-logo-icon">V</span>
+            <span className="cp-logo-icon"><img src="/images/guruji.png" alt="Vedamrut" /></span>
             <div>
               <span className="cp-logo-name">Vedamrut</span>
               <span className="cp-logo-sub">Pain &amp; Neurotherapy Centre</span>

@@ -48,7 +48,7 @@ const AcademyPage = () => {
       <nav className="acp-navbar">
         <div className="acp-nb-inner">
           <Link to="/" className="acp-logo">
-            <span className="acp-logo-icon">V</span>
+            <span className="acp-logo-icon"><img src="/images/guruji.png" alt="Vedamrut" /></span>
             <div><span className="acp-logo-name">Vedamrut</span><span className="acp-logo-sub">Pain &amp; Neurotherapy</span></div>
           </Link>
           <div className="acp-nav-actions">

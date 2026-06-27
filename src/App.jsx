@@ -18,7 +18,6 @@ import Stats from './components/Stats/Stats';
 import Gallery from './components/Gallery/Gallery';
 import Testimonials from './components/Testimonials/Testimonials';
 import Achievements from './components/Achievements/Achievements';
-import HealthTips from './components/HealthTips/HealthTips';
 import FAQ from './components/FAQ/FAQ';
 import CTA from './components/CTA/CTA';
 import Contact from './components/Contact/Contact';
@@ -37,7 +36,7 @@ const HomePage = () => {
   const sections = [
     Hero, About, GurujiPreview, WhyChoose, Treatments, CoursesPreview, Process,
     Benefits, Stats, Gallery, Testimonials,
-    Achievements, HealthTips, FAQ, CTA, Contact,
+    Achievements, FAQ, CTA, Contact,
   ];
 
   return (

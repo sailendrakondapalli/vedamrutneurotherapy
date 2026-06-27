@@ -570,3 +570,14 @@
   .ap-footer-strip { flex-direction: column; text-align: center; }
   .ap-nav-actions .ap-call-btn { display: none; }
 }
+
+/* Guruji logo image */
+.td-logo-icon img, .cp-logo-icon img, .acp-logo-icon img, .ap-logo-icon img, .alp-logo-icon img, .gjp-logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: inherit;
+}
+

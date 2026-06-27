@@ -1,57 +1,74 @@
 .floating-btns {
   position: fixed;
   bottom: 28px;
-  right: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  left: 0;
+  right: 0;
   z-index: 900;
+  pointer-events: none; /* let clicks through except on buttons */
 }
 
-.float-btn {
+/* WhatsApp — RIGHT side */
+.float-wa {
+  position: fixed;
+  bottom: 28px;
+  right: 20px;
   width: 54px;
   height: 54px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 24px rgba(37,211,102,0.45);
   transition: var(--transition);
-  position: relative;
-}
-
-.float-wa {
+  text-decoration: none;
+  pointer-events: all;
   background: #25D366;
   color: white;
   animation: waPulse 2.5s ease-in-out infinite;
 }
 
+/* Phone — LEFT side */
 .float-phone {
+  position: fixed;
+  bottom: 28px;
+  left: 20px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(11,110,79,0.45);
+  transition: var(--transition);
+  text-decoration: none;
+  pointer-events: all;
   background: var(--gradient-primary);
   color: white;
   animation: phonePulse 2.5s ease-in-out infinite 1.25s;
 }
 
+.float-wa:hover   { transform: scale(1.12); background: #1db855; }
+.float-phone:hover { transform: scale(1.12); }
+
 @keyframes waPulse {
-  0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
-  50% { box-shadow: 0 6px 32px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.1); }
+  0%,100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
+  50%     { box-shadow: 0 6px 32px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.1); }
 }
 
 @keyframes phonePulse {
-  0%, 100% { box-shadow: 0 6px 24px rgba(11,110,79,0.4); }
-  50% { box-shadow: 0 6px 32px rgba(11,110,79,0.65), 0 0 0 10px rgba(11,110,79,0.1); }
+  0%,100% { box-shadow: 0 6px 24px rgba(11,110,79,0.4); }
+  50%     { box-shadow: 0 6px 32px rgba(11,110,79,0.65), 0 0 0 10px rgba(11,110,79,0.1); }
 }
 
 .float-tooltip {
   position: absolute;
-  right: calc(100% + 12px);
   top: 50%;
   transform: translateY(-50%);
   background: rgba(10,22,40,0.92);
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 6px;
   white-space: nowrap;
   pointer-events: none;
@@ -59,7 +76,11 @@
   transition: opacity 0.2s;
 }
 
-.float-tooltip::after {
+/* WhatsApp tooltip on left of button */
+.float-wa .float-tooltip {
+  right: calc(100% + 10px);
+}
+.float-wa .float-tooltip::after {
   content: '';
   position: absolute;
   right: -5px;
@@ -70,11 +91,26 @@
   border-right: none;
 }
 
-.float-btn:hover .float-tooltip {
-  opacity: 1;
+/* Phone tooltip on right of button */
+.float-phone .float-tooltip {
+  left: calc(100% + 10px);
+}
+.float-phone .float-tooltip::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-right-color: rgba(10,22,40,0.92);
+  border-left: none;
 }
 
+.float-btn:hover .float-tooltip { opacity: 1; }
+.float-wa:hover .float-tooltip   { opacity: 1; }
+.float-phone:hover .float-tooltip { opacity: 1; }
+
 @media (max-width: 480px) {
-  .float-btn { width: 48px; height: 48px; }
-  .floating-btns { bottom: 20px; right: 16px; }
+  .float-wa    { width: 50px; height: 50px; right: 14px; bottom: 20px; }
+  .float-phone { width: 50px; height: 50px; left: 14px; bottom: 20px; }
 }

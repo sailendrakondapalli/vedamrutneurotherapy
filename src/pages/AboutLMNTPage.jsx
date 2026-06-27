@@ -48,7 +48,7 @@ const AboutLMNTPage = () => {
       <nav className="alp-navbar">
         <div className="alp-navbar-inner">
           <Link to="/" className="alp-logo">
-            <span className="alp-logo-icon">V</span>
+            <span className="alp-logo-icon"><img src="/images/guruji.png" alt="Vedamrut" /></span>
             <div>
               <span className="alp-logo-name">Vedamrut</span>
               <span className="alp-logo-sub">Pain &amp; Neurotherapy Centre</span>
