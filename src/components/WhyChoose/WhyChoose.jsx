@@ -48,6 +48,18 @@ const WhyChoose = () => {
             </div>
           ))}
         </div>
+
+        {/* Why Choose Us Video */}
+        <div className="why-video-wrap" data-aos="fade-up" data-aos-delay="100">
+          <video
+            src="/images/whychooseus.mp4"
+            controls
+            playsInline
+            preload="metadata"
+            className="why-video"
+            aria-label="Why choose Vedamrut – patient success story"
+          />
+        </div>
       </div>
     </section>
   );
