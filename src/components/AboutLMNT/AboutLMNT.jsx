@@ -84,6 +84,9 @@ const AboutLMNT = () => {
           <p className="section-desc" style={{ margin: '14px auto 0', textAlign: 'center' }}>
             Lajpatrai Mehra Neurotherapy — An Ancient Science Empowered by Modern Physiology
           </p>
+          <div className="lmnt-tricities-badge">
+            🏆 First Neurotherapy Centre in Tri-Cities &nbsp;·&nbsp; Warangal &nbsp;·&nbsp; Kazipet &nbsp;·&nbsp; Hanamkonda
+          </div>
         </div>
 
         {/* Intro split */}

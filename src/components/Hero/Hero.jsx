@@ -42,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            🏥 Trusted Neurotherapy Centre — Warangal
+            🏆 First Neurotherapy Centre in Tri-Cities — Warangal · Kazipet · Hanamkonda
           </motion.span>
 
           <motion.h1

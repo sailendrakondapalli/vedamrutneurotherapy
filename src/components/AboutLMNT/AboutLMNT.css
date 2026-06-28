@@ -362,3 +362,17 @@
   .lmnt-img-0 { height: 160px; }
   .lmnt-tab { padding: 12px 16px; font-size: 0.80rem; }
 }
+
+/* Tri-cities badge */
+.lmnt-tricities-badge {
+  display: inline-block;
+  margin: 14px auto 0;
+  background: linear-gradient(135deg, #0B6E4F, #1D9A6C);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-align: center;
+}

@@ -18,6 +18,7 @@ import Stats from './components/Stats/Stats';
 import Gallery from './components/Gallery/Gallery';
 import Results from './components/Results/Results';
 import Testimonials from './components/Testimonials/Testimonials';
+import AboutLMNT from './components/AboutLMNT/AboutLMNT';
 import Achievements from './components/Achievements/Achievements';
 import FAQ from './components/FAQ/FAQ';
 import CTA from './components/CTA/CTA';
@@ -35,7 +36,7 @@ import AcademyPage from './pages/AcademyPage';
 /* ── Home page ── */
 const HomePage = () => {
   const sections = [
-    Hero, About, GurujiPreview, WhyChoose, Treatments, CoursesPreview, Process,
+    Hero, About, GurujiPreview, WhyChoose, AboutLMNT, Treatments, CoursesPreview, Process,
     Benefits, Stats, Gallery, Results, Testimonials,
     Achievements, FAQ, CTA, Contact,
   ];
